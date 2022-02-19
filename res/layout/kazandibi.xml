@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height = "fill_parent"
+    android:layout_width = "fill_parent" >
+
+    <ImageView
+        android:id="@+id/kazandibi_anim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@drawable/kazandibi1" />
+    
+    <LinearLayout
+            android:id="@+id/action_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true" 
+            android:background="@color/pink">
+
+            <Button
+                android:id="@+id/leave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/leave" />
+
+            <Button
+                android:id="@+id/bcevap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/bcevap"  />
+
+            <Button
+                android:id="@+id/Hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:text="@string/Hint" />
+
+            <Button
+                android:id="@+id/hintordelete"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-107dp"
+                android:text="@string/hintordelete"
+                android:textColor="#FF0000"
+                android:visibility="invisible" />
+        </LinearLayout>
+        
+    
+    <LinearLayout
+            android:id="@+id/third_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/action_buttons"
+            android:background="@color/pink" >
+
+            <Button
+                android:id="@+id/b7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b7">
+            </Button>
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b8" >
+            </Button>
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b7" >
+            </Button>
+        </LinearLayout>
+    
+		<LinearLayout
+            android:id="@+id/second_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/third_buttons"
+            android:background="@color/pink"
+             >
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b4" >
+            </Button>
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b5" >
+            </Button>
+
+            <Button
+                android:id="@+id/b6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b6" >
+            </Button>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/first_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_above="@+id/second_buttons" 
+            android:background="@color/pink">
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b1" >
+            </Button>
+
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b4" >
+            </Button>
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/b3" >
+            </Button>
+        </LinearLayout>
+        
+        
+        <TextView
+          android:id ="@+id/slidingtext"
+          android:layout_width="1000dp"
+          android:layout_height="40dp"
+          android:textColor="#000"
+          android:layout_marginTop="100dp"
+          android:singleLine="True"
+          android:background="@android:color/transparent" />
+
+        
+     <TextView
+            android:id="@+id/editText1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@android:color/transparent"
+            android:enabled="false"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="50dp" />
+     
+      <SlidingDrawer
+        android:id="@+id/SlidingDrawer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:content="@+id/contentLayout"
+        android:handle="@+id/slideButton"
+        android:layout_marginTop="50dip"
+        android:layout_marginBottom="100dip"
+        android:layout_marginLeft="50dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/slideButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/share" >
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/contentLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/pink" >
+
+            <TextView
+                android:id="@+id/aciklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sec"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/share"
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/sec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/facebook"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:text="@string/platform"
+                android:textColor="#000" />
+
+            <Button
+                android:id="@+id/facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/facebook" >
+            </Button>
+
+            <Button
+                android:id="@+id/twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/twitter" >
+            </Button>
+        </RelativeLayout>
+    </SlidingDrawer>
+     
+        
+        
+        
+
+      <Gallery
+        android:id="@+id/gallery"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+		android:layout_alignParentTop="true"
+        android:background="@color/pink"
+        android:gravity="center_horizontal" />
+
+        
+   
+
+</RelativeLayout>

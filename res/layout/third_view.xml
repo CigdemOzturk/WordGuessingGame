@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout03"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <ImageView
+        android:id="@+id/anim3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/yardim"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+        android:src="@drawable/yardim"
+         />
+
+   
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawerYardim"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/contentYardim"
+        android:handle="@+id/handleYardim"
+         android:layout_below="@+id/yardim"
+      >
+
+        <Button
+            android:id="@+id/handleYardim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false" />
+
+        <RelativeLayout
+            android:id="@+id/contentYardim"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF444444"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/contentyardim"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/yardimcontent" />
+
+            <Button
+                android:id="@+id/geridonyardim"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button_pink"
+                android:text="@string/geridon" >
+            </Button>
+
+            <Button
+                android:id="@+id/puanlamayardim"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/custom_button_pink"
+                android:text="@string/puanlamayardim">
+            </Button>
+
+            <Button
+                android:id="@+id/kelimeyardim"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/geridonyardim"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_default_normal_purple"
+                android:text="@string/kelimeyardim"  >
+            </Button>
+
+            <Button
+                android:id="@+id/dereceyardim"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/puanlamayardim"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_default_normal_purple"
+                android:text="@string/dereceyardim" >
+            </Button>
+
+            <Button
+                android:id="@+id/tanimyardim"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/dereceyardim"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_default_normal_purple"
+                android:text="@string/tanimyardim" >
+            </Button>
+
+            <Button
+                android:id="@+id/icerikyardim"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/kelimeyardim"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_default_normal_purple"
+                android:text="@string/icerikyardim" >
+            </Button>
+        </RelativeLayout>
+    </SlidingDrawer>
+    
+    
+    <Button
+         android:id="@+id/byardim"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/yardim"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@null" />
+    
+     <Button
+         android:id="@+id/byardimsol"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/byardim"
+        android:layout_marginLeft="14dp"
+        android:background="@null" />
+
+
+     <Button
+        android:id="@+id/byardimsag"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/byardim"
+        android:layout_alignParentRight="true"
+        android:background="@null" />
+
+</RelativeLayout>

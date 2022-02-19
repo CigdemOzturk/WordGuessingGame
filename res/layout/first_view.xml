@@ -1,0 +1,222 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/anim1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/oyna"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/oyna" />
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/oyna"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false" />
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/slidingdrawerbg" >
+
+            <TextView
+                android:id="@+id/Oyuncu_sec"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/account1"
+                android:text="@string/Oyuncu_sec"/>
+
+            <Button
+                android:id="@+id/account1"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/account2"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/account2"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/account3"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/account3"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/account4"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/account4"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/account5"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/account5"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/useredit"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/useredit"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/geridon"
+                android:background="@drawable/custom_button_pink"
+                android:text="@string/useredit" >
+            </Button>
+
+            <Button
+                android:id="@+id/geridon"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/custom_button_pink"
+                android:text="@string/geridon" >
+            </Button>
+        </RelativeLayout>
+    </SlidingDrawer>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/oyna"
+        android:content="@+id/content2"
+        android:handle="@+id/handle2"
+        android:visibility="invisible" >
+
+        <Button
+            android:id="@+id/handle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false" >
+        </Button>
+
+        <RelativeLayout
+            android:id="@+id/content2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/slidingdrawerbg" >
+
+            <TextView
+                android:id="@+id/Oyuncu_sec2"
+                android:layout_width="wrap_content"
+                android:layout_height="17dp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/editaccount"
+                android:text="@string/Oyuncu_sec2" />
+
+            <Button
+                android:id="@+id/editaccount1"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/editaccount2"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/editaccount2"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/editaccount3"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/editaccount3"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/editaccount4"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/editaccount4"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/editaccount5"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/editaccount5"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_above="@+id/editgeridon"
+                android:text="" >
+            </Button>
+
+            <Button
+                android:id="@+id/editgeridon"
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/custom_button_pink"
+                android:text="@string/geridon" >
+            </Button>
+        </RelativeLayout>
+    </SlidingDrawer>
+
+    <Button
+        android:id="@+id/boyna"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/oyna"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/bsol"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/boyna"
+        android:layout_marginLeft="14dp"
+        android:background="@null" />
+
+    <Button
+        android:id="@+id/bsag"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/boyna"
+        android:layout_alignParentRight="true"
+        android:background="@null" />
+
+</RelativeLayout>

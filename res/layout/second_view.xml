@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+        <ImageView
+        android:id="@+id/anim2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitXY">
+   		</ImageView>
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/menu" />
+
+   
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawerMenu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:content="@+id/contentMenu"
+        android:handle="@+id/handleMenu"
+        android:layout_below="@+id/menu"
+        >
+
+        <Button
+            android:id="@+id/handleMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="false" />
+
+        <RelativeLayout
+            android:id="@+id/contentMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FF444444"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/contentmenu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/menucontent" />
+
+            <Button
+                android:id="@+id/geridonMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_button_pink"
+                android:text="@string/geridon" >
+            </Button>
+
+           
+
+        </RelativeLayout>
+    </SlidingDrawer>
+    
+   
+
+    <Button
+        android:id="@+id/bmenu"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@null" />
+
+    
+    
+     <Button
+         android:id="@+id/bmenusol"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/bmenu"
+        android:layout_marginLeft="14dp"
+        android:background="@null" />
+     
+ <Button
+        android:id="@+id/bmenusag"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/bmenu"
+        android:layout_alignParentRight="true"
+        android:background="@null" />
+    
+
+
+</RelativeLayout>

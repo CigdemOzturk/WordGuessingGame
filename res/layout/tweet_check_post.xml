@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/pink">
+    
+    
+    <ImageView
+        android:id="@+id/tweetimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tweetimage"
+        android:layout_alignParentTop="true" />
+    
+        <TextView
+        android:id="@+id/ilkuyari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="@string/twittershare"
+        android:textColor="#fff"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tweetimage" />
+        
+      <TextView
+  	    android:id="@+id/ikinciuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="@string/twitterconnect"
+		android:layout_below="@+id/ilkuyari"/>
+
+    <CheckBox
+        android:id="@+id/enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ikinciuyari"
+        android:button="@drawable/t_logo" />
+    
+        <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enable"
+        android:layout_toRightOf="@+id/enable"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:hint="@string/twitterhint" />
+    
+    	<TextView
+	    android:id="@+id/ucuncuuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="@string/twittersh"
+		android:layout_below="@+id/enable"/>
+    	
+    	    <ListView
+		android:id="@android:id/list"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@+id/ucuncuuyari"
+		android:visibility="gone"
+		
+	/>
+    	
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="@string/twittercn" />
+    		
+    
+
+    
+	
+		</RelativeLayout>
+		
+	

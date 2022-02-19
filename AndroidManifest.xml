@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="tr.edu.khas.tatliavcisi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    
+
+    <application
+        android:icon="@drawable/icon_1"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity 
+            android:name=".DessertsActivity"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity 
+            android:name=".Kemalpasa"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity 
+            android:name=".Muhallebi"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity 
+            android:name=".Pismaniye"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity 
+            android:name=".Kazandibi"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity android:name=".TestConnect"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity android:name=".TestPost"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>        
+			</intent-filter>
+        </activity>
+        
+        <activity android:name=".Twitter"
+            android:screenOrientation="portrait"></activity>
+        
+        <activity android:name="com.twitter.android.OAUTH"
+			android:label="@string/oauth_name"
+			android:screenOrientation="portrait"
+        >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="bloa-app" android:host="twitt" />
+			</intent-filter>
+        </activity>
+    </application>
+    
+   
+
+</manifest>

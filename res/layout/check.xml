@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/pink">
+
+
+    <ImageView
+        android:id="@+id/faceimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/faceimage"
+        android:layout_alignParentTop="true" />
+
+
+  	<TextView
+  	    android:id="@+id/ilkuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="@string/check"
+		android:layout_marginBottom="3dp"
+		android:layout_below="@+id/faceimage"/>
+  	
+  	<TextView
+  	    android:id="@+id/ikinciuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="@string/check1"
+		android:layout_below="@+id/ilkuyari"/>
+		
+	<CheckBox
+		android:id="@+id/cb_facebook"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:text="           Facebook (Henüz bağlı değilsiniz.) "
+		android:textSize="14sp"
+		android:textStyle="bold"
+		android:textColor="#ccc"
+		android:clickable="true"
+		android:focusable="true" 
+		android:button="@drawable/btn_check_facebook"
+		android:layout_below="@+id/ikinciuyari"/>
+	
+	<TextView
+	    android:id="@+id/ucuncuuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="Facebook'a bağlanmak için yukarıdaki Facebook ikonuna tıklamanız gerekmektedir."
+		android:layout_below="@+id/cb_facebook"/>
+	
+	<Button
+		android:id="@+id/button1"
+		android:layout_marginTop="10dp"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:text="Facebook'a bağlandığımdan eminim ve skorumu paylaşmak istiyorum." 
+		android:layout_alignParentBottom="true"/>
+	
+	
+</RelativeLayout>

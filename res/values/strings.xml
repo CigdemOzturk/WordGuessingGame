@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    
+    <string name="app_name">TatlıAvcısı</string>
+    <color name="pink">#d35279</color>
+    <color name="lightpink">#fde7e9</color>
+    <color name="middlepink">#ffddd4</color>
+     <string name="bad_value">Kötü Değer!</string>
+      <string name="tweet_error">Bir sorun oluştu!</string>
+      <string name="auth_progress_title">Kimlik doğrulanıyor...</string>
+    <string name="auth_progress_text">Profil bilgileriniz getiriliyor.</string>
+    <string name="userhint">Henüz bağlı değilsiniz.</string>
+    <string name="tweet_progress_title">Gönderiliyor...</string>
+    <string name="tweet_progress_text">Skorunuz paylaşıldı!</string>
+    <string name="oauth_name">OAUTH</string>
+        
+ 	<string name = "dialogButtonDuzenle">Düzenle</string>
+ 	<string name = "dialogButtonSil">Oyuncu Sil</string>
+ 	<string name = "dialogButtonOK">Tamam</string>
+ 	<string name = "Hint">İpucu</string>
+ 	
+ 	<string name = "Oyuncu_sec">Oyuncu Seç</string>
+ 	<string name = "useredit">Oyuncu Düzenle</string>
+ 	<string name = "geridon">Geri Dön</string>
+    <string name = "Oyuncu_sec2">Düzenlemek İstediğin Oyuncuyu Seç</string>
+	
+    <string name = "leave">Ayrıl\t</string>
+	<string name = "bcevap">Cevap</string>
+	<string name = "hintordelete">Sil</string>
+	<string name = "b7">İ</string>
+	<string name = "b8">B</string>
+	<string name = "b4">A</string>
+	<string name = "b5">N</string>
+	<string name = "b6">D</string>
+	<string name = "b1">K</string>
+	<string name = "b3">Z</string>
+	
+	<string name = "bb8">Ş</string>
+	<string name = "bb5">L</string>
+	<string name = "bb6">P</string>
+	<string name = "bb2">E</string>
+	<string name = "bb3">M</string>
+	
+	<string name = "b_2">U</string>
+	<string name = "b_3">H</string>
+	
+	<string name = "bb_8">Y</string>
+	
+	<string name = "puanlamayardim">Puanlama</string>
+	<string name = "kelimeyardim">Kelimeler</string>
+	<string name = "dereceyardim">Dereceler</string>
+	<string name = "tanimyardim">Tatlı Avcısı</string>
+	<string name = "icerikyardim">İçerik</string>
+	
+
+	<string name = "bos">Boş</string>
+	<string name = "oas">Oyuncu Adını Seç:</string>
+	<string name = "oabb">Oyuncu Adını Boş Bırakamazsın!</string>
+	<string name = "goa">Geçersiz Oyuncu Adı!</string>
+	<string name = "oa6kfo">Oyuncu Adı 6 Karakterden Fazla Olamaz!</string>
+	<string name = "oabo">Oyuncu Adı "Boş" Olamaz!</string>
+	<string name = "bir">1</string>
+	<string name = "iki">2</string>
+	<string name = "uc">3</string>
+	<string name = "dort">4</string>
+	<string name = "bes">5</string>
+	<string name = "tai">Tatlı Avcısı İçerik</string>
+	<string name = "tak">Tatlı Avcısı Kelimeler</string>
+	<string name = "tad">Tatlı Avcısı Dereceler</string>
+	<string name = "tap">Tatlı Avcısı Puanlama</string>
+	<string name = "od">Oyuncu Düzenlendi!</string>
+	<string name = "os">Oyuncu Silindi!</string>
+	<string name = "packet">tr.edu.khas.tatliavcisi</string>
+	<string name = "packet1">tr.edu.khas.tatliavcisi.MainActivity</string>
+	
+	<string name = "check">Skorunuzu Facebook üzerinde paylaşmak için Facebook\'a bağlı olmanız gerekmektedir.</string>
+	<string name = "check1">Facebook\'a bağlı değilseniz, Facebook ikonunun yanında \'Henüz Bağlı Değilsiniz\' uyarısını görürsünüz.</string>
+	
+	<string name = "share">Bu oyunda en iyi benim mi diyorsun? O zaman skorunu paylaş herkes ne kadar iyi olduğunu görsün!</string>
+    <string name = "platform">Skorunu paylaşacağın platformu seç:</string>
+   
+    <string name ="splash">Oyun Hazırlanıyor...Ya Sen Hazır Mısın?</string>
+    
+    <string name = "twittershare">Skorunuzu Twitter üzerinde paylaşmak için Twitter\'a bağlı olmanız gerekmektedir.</string>
+    <string name = "twitterconnect">Twitter\'a bağlı değilseniz, Twitter ikonunun yanında \'Henüz Bağlı Değilsiniz\' uyarısını görürsünüz.</string>
+    <string name = "twitterhint">    Twitter(Henüz bağlı değilsiniz.)</string>
+    <string name = "twittersh">Twitter\'a bağlanmak için yukarıdaki Twitter ikonuna tıklamanız gerekmektedir.</string>
+    <string name = "twittercn">Twitter\'a bağlandığımdan eminim ve skorumu paylaşmak istiyorum.</string>
+    
+    <string name = "kazan">Kazandibi</string>
+    <string name = "pisman">Pismaniye</string>
+    <string name = "muhal">Muhallebi</string>
+    <string name = "tweetsh">Tatli Avcısında yeni bir skor elde ettim: </string>
+    <string name = "scorum">\tskorum\t</string>
+    <string name = "ovt">\toldu\tve\ttoplamda\t</string>
+    <string name = "bla">\tpuan elde ettim.Ya sen ne durumdasin?</string>
+    <string name = "vir">\t,\t</string>
+    <string name = "txt">text</string>
+    <string name = "max">max_id</string>
+    <string name = "user">user</string>
+    <string name = "id">id</string>
+    <string name = "since">since_id</string>
+    <string name = "count">count</string>
+    <string name = "page">page</string>
+	
+    
+    
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/pink">
+	
+     <ImageView
+        android:id="@+id/faceimage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/faceimage"
+        android:layout_alignParentTop="true" />
+
+	<TextView
+	    android:id="@+id/ilkuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="Skorunuzu paylaşırken eklemek istediğiniz birşey varsa lütfen aşağıya yazınız."
+		android:layout_below="@+id/faceimage"/>
+		
+	<EditText
+		android:id="@+id/revieew"
+		android:layout_marginTop="15dp"
+		android:layout_width="250dp"
+		android:layout_height="100dp"
+		android:layout_below="@+id/ilkuyari"
+		android:layout_centerInParent="true"/>
+
+	<TextView
+	    android:id="@+id/ikinciuyari"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="left"
+		android:textSize="13sp"
+		android:textColor="#fff"
+		android:textStyle="bold"
+		android:text="Paylaşılacak Platform:"
+		android:layout_below="@+id/revieew"/>
+		
+	<CheckBox
+		android:id="@+id/cb_facebook"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="5dp"
+		android:text="             Facebook"
+		android:textStyle="bold"
+		android:textSize="14sp"
+		android:clickable="true"
+		android:focusable="true" 
+		android:button="@drawable/btn_check_facebook"
+		android:layout_below="@+id/ikinciuyari"/>
+
+	<Button
+		android:id="@+id/button1"
+		android:layout_marginTop="15dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text=" Tamam "
+		android:layout_below="@+id/cb_facebook"
+		android:layout_centerInParent="true"/>
+</RelativeLayout>
